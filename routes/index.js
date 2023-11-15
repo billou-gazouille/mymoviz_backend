@@ -8,7 +8,8 @@ router.get('/movies', async (req, res) => {
     const resp = await fetch(url);
     const data = await resp.json();
     //res.json(data);
-    res.json({movies: data.results});
+    //res.json({movies: data.results});
+    res.json({movies: ['hello', 'world']});
 });
 
 module.exports = router;
